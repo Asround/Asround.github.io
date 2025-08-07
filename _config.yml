@@ -73,9 +73,9 @@ netease_comment: false
 # ga_domain: huangxuan.me
 
 # Sidebar settings
-sidebar: false # whether or not using Sidebar.
+sidebar: ture # whether or not using Sidebar.
 sidebar-about-description: "桂香尘处减, 练影月前空"
-sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
+# sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
