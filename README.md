@@ -1,63 +1,41 @@
-[Hux Blog](https://huangxuan.me)
-================================
+# Asround Blog
 
-> I never expected this to become popular.
-
-![](http://huangxuan.me/img/blog-desktop.jpg)
-
-
-[User Manual 👉](_doc/Manual.md)
---------------------------------------------------
-
-### Getting Started
-
-1. You will need [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://bundler.io/) to use [Jekyll](https://jekyllrb.com/). Following [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/) to fullfill the enviromental requirement.
-
-2. Installed dependencies in the `Gemfile`:
-
-```sh
-$ bundle install 
-```
-
-3. Serve the website (`localhost:4000` by default):
-
-```sh
-$ bundle exec jekyll serve  # alternatively, npm start
-```
-
-### Development (Build From Source)
-
-To modify the theme, you will need [Grunt](https://gruntjs.com/). There are numbers of tasks you can find in the `Gruntfile.js`, includes minifing JavaScript, compiling `.less` to `.css`, adding banners to keep the Apache 2.0 license intact, watching for changes, etc. 
-
-Yes, they were inherited and are extremely old-fashioned. There is no modularization and transpilation, etc.
-
-Critical Jekyll-related code are located in `_include/` and `_layouts/`. Most of them are [Liquid](https://github.com/Shopify/liquid/wiki) templates.
-
-This theme uses the default code syntax highlighter of jekyll, [Rouge](http://rouge.jneen.net/), which is compatible with Pygments theme so just pick any pygments theme css (e.g. from [here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) and replace the content of `highlight.less`.
+>  forked form: https://github.com/Huxpro/huxpro.github.io
+>
+> thanks for that!
 
 
-### Interesting to know more? Checkout the [full user manual](_doc/Manual.md)!
+
+- Not very familiar with website writing, so the content is relatively simple
+- And I'm still fixing a bunch of problems...
 
 
-Other Resources
----------------
 
-Ports
-- [**Hexo**](https://github.com/Kaijun/hexo-theme-huxblog) by @kaijun
-- [**React-SSR**](https://github.com/LucasIcarus/huxpro.github.io/tree/ssr) by @LucasIcarus
+For the posts:
 
-[Starter/Boilerplate](https://github.com/huxpro/huxblog-boilerplate)
-- Out of date. Helps wanted for updating it on par with the main repo
-
-Translation
-- [🇨🇳  中文文档（有点过时）](https://github.com/Huxpro/huxpro.github.io/blob/master/_doc/README.zh.md)
+- I'll upload some markdown files and html files(converted form md files) as my blog posts, which may contain:
+  1. Some of my personal feelings
+  2. Partial study notes and notes
+  3. Some method records and memos
+  4. etc.
 
 
-License
--------
 
-Apache License 2.0.
-Copyright (c) 2015-present Huxpro
+Contact me:
 
-Hux Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
-Copyright (c) 2013-2016 Blackrock Digital LLC.
+- You can contact me by email:
+  1. asround@qq.com
+  2. asroundzsy@outlook.com
+- I'm glad if you want to discuss something in my blog.
+  - But I can't guarantee that I will remember everything I write
+  - Another but, I'll reply the email as soon as possible :)
+
+
+
+
+
+Ps:
+
+- latex formula editing support is now not good to use, I may post that kind things on [Zhihu](https://www.zhihu.com/people/74-33-14-69-84)
+  - You can also click on the corresponding icon at the bottom of the blog page to access my [Zhihu](https://www.zhihu.com/people/74-33-14-69-84) page (github page as well)
+
