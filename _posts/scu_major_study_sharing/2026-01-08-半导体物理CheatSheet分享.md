@@ -11,6 +11,8 @@ tags:
 
 # 半导体物理CheatSheet分享
 
+- 请到github仓库(后文有链接)下载 pdf 查看以获得更好体验
+
 ![第一页](https://raw.githubusercontent.com/Asround/Asround.github.io/master/_posts/assets/2026-01-08_SPCS.assets/image-20260108132258580.png)
 
 ![第二页](https://raw.githubusercontent.com/Asround/Asround.github.io/master/_posts/assets/2026-01-08_SPCS.assets/image-20260108132331510.png)
