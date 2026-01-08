@@ -4,6 +4,7 @@ title:      "半导体物理CheatSheet分享"
 subtitle:   "基于《半导体物理学(第 8 版)》(刘恩科)"
 date:       2026-01-08 13:21:00
 author:     "Asround"
+header-img: "https://raw.githubusercontent.com/Asround/Asround.github.io/master/_posts/post_img/2025-1-8-PSCS.png"
 tags:
     - scu
     - 课程学习
