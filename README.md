@@ -1,6 +1,6 @@
 # Asround · 博客导航
 
-个人博客现位于 **https://asround-blog.pages.dev/**。
+个人博客现位于 https://asround-blog.pages.dev/。
 
 本仓库仅维护 https://asround.github.io/ 的导航页面。旧文章、主题与构建工具已归档移除；未来内容在 `Asround/Asround_Blog` 维护。
 
