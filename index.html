@@ -1,46 +1,71 @@
----
-layout: page
-description: "「无用之人 有用之识」"
----
-
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
-            {% else %}
-                {{ post.content | strip_html | truncate:200 }}
-            {% endif %}
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asround · 博客新地址</title>
+  <meta name="description" content="Asround 的博客已迁移，欢迎访问 asround-blog.pages.dev，阅读最新文章与学习笔记。">
+  <link rel="canonical" href="https://asround-blog.pages.dev/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root { color-scheme: light dark; --bg: #f3eff6; --card: #fff; --text: #29232e; --muted: #6f6477; --accent: #804291; --soft: #f3eaf7; --border: #ece5f0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .banner { height: clamp(230px, 38vh, 430px); background: linear-gradient(0deg, rgba(31, 19, 43, .42), rgba(31, 19, 43, .12)), url('/banner.webp') center 48% / cover; display: grid; place-content: center; text-align: center; padding: 24px 24px 65px; color: #fff; }
+    .banner p { margin: 0 0 14px; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; letter-spacing: .04em; text-shadow: 0 2px 18px #30223980; }
+    .banner span { font-size: .95rem; letter-spacing: .15em; text-shadow: 0 1px 8px #302239; }
+    main { width: min(620px, calc(100% - 32px)); position: relative; margin: -48px auto 0; }
+    .card { border-radius: 16px; background: var(--card); padding: clamp(28px, 6vw, 48px); text-align: center; box-shadow: 0 12px 45px #31213e0d; }
+    .avatar { width: 76px; height: 76px; object-fit: cover; border-radius: 50%; border: 4px solid var(--soft); }
+    .label { display: block; margin: 22px 0 12px; color: var(--accent); font-size: .8rem; letter-spacing: .13em; font-weight: 600; }
+    h1 { margin: 0 0 18px; font-size: clamp(1.6rem, 5vw, 2rem); line-height: 1.4; }
+    .description { margin: 0; color: var(--muted); font-size: .98rem; line-height: 1.9; }
+    .visit { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 30px; min-height: 54px; padding: 14px 20px; border-radius: 12px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; transition: filter .2s, transform .2s; }
+    .visit:hover { filter: brightness(1.12); transform: translateY(-2px); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+    .address { display: inline-block; margin-top: 16px; color: var(--accent); text-decoration: none; font-size: .9rem; overflow-wrap: anywhere; }
+    .address:hover { text-decoration: underline; }
+    .note { border-top: 1px solid var(--border); padding-top: 23px; margin: 27px 0 0; color: var(--muted); font-size: .84rem; line-height: 1.8; }
+    footer { padding: 27px 16px 32px; text-align: center; color: var(--muted); font-size: .8rem; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #17131b; --card: #25202b; --text: #f0eaf4; --muted: #b9adbf; --accent: #cda2df; --soft: #392d42; --border: #3b3143; } .visit { color: #24162d; } }
+    @media (prefers-reduced-motion: reduce) { .visit { transition: none; } }
+    @media (max-width: 400px) { .banner span { letter-spacing: .06em; } .card { padding: 28px 23px; } }
+  </style>
+</head>
+<body>
+  <header class="banner" aria-label="Asround">
+    <p>Asround</p>
+    <span>桂香尘处减，练影月前空。</span>
+  </header>
+  <main>
+    <section class="card" aria-labelledby="title">
+      <img class="avatar" src="/avatar.webp" alt="Asround 的头像" width="76" height="76">
+      <span class="label">博客新地址</span>
+      <h1 id="title">我们在新博客见</h1>
+      <p class="description">我的个人博客已迁移至新站。<br>今后的文章、学习笔记与生活记录，都会在那里更新。</p>
+      <a class="visit" href="https://asround-blog.pages.dev/">访问我的博客 <span aria-hidden="true">↗</span></a>
+      <a class="address" href="https://asround-blog.pages.dev/">asround-blog.pages.dev</a>
+      <p class="note">这里作为新博客的导航入口保留。<br>欢迎收藏新地址，感谢你的来访。</p>
+    </section>
+  </main>
+  <footer>Asround · 桂香尘处减，练影月前空。</footer>
+  <script>
+    // Retire only the previous blog's service worker and named caches.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(registrations =>
+        Promise.all(registrations.filter(registration =>
+          [registration.active, registration.waiting, registration.installing].some(worker =>
+            worker && new URL(worker.scriptURL).pathname === '/sw.js'
+          )
+        ).map(registration => registration.unregister()))
+      ).catch(() => {});
+    }
+    if ('caches' in window) {
+      caches.keys().then(keys => Promise.all(keys.filter(key =>
+        key.startsWith('main-') || key === 'precache-v1' || key === 'runtime'
+      ).map(key => caches.delete(key)))).catch(() => {});
+    }
+  </script>
+</body>
+</html>
